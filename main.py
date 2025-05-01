@@ -60,7 +60,7 @@ class PcrHeDaoPlugin(Star):
                     "🗡️ 合刀计算结果：\n"
                     f"• BOSS剩余血量：{boss_hp}\n"
                     f"• A刀伤害：{a_dmg}\n"
-                    f"• B刀伤害：{b_dmg}\n"
+                    f"• B刀需求伤害：{b_dmg}\n"
                     f"⏳ 预计补刀时间：{result}秒"
                 )
 
