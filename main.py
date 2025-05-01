@@ -3,7 +3,7 @@ from astrbot.api.star import Context, Star, register
 from astrbot.api import logger
 import math
 
-@register("pcrhedao", "作者名", "PCR合刀计算插件", "1.1.0", "https://example.com")
+@register("pcrhedao", "shenle", "PCR合刀计算器", "1.1.0", "https://github.com/Kagura-wei/astrbot_plugin_pcrhedao")
 class PcrHeDaoPlugin(Star):
     def __init__(self, context: Context):
         super().__init__(context)
