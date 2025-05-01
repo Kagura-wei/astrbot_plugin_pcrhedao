@@ -9,7 +9,7 @@ class KnifeCalculator(Star):
         super().__init__(context)
 
     @filter.command("合刀")
-    async def calculate_knife(self, event: AstrMessageEvent):
+    async def calculate_knife(self, event: AstrMessageEvent, *args, **kwargs):
         '''合刀时间计算器
         格式：合刀 [BOSS血量] [A伤害] [B伤害]
         示例：合刀 1000000 500000 300000'''
