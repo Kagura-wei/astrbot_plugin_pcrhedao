@@ -54,7 +54,13 @@ class PcrHeDaoPlugin(Star):
             if result < 0:
                 response = "⚠️ 计算结果异常：补刀时间为负数，请检查输入数值"
             elif result > 90:
-                response = "⏱️ 补刀时间超过90秒，建议直接出刀"
+                response = (
+                    "🗡️ 合刀计算结果：\n"
+                    f"• BOSS剩余血量：{boss_hp}\n"
+                    f"• A刀伤害：{a_dmg}\n"
+                    f"• B刀伤害：{b_dmg}\n"
+                    f"⏳ 满补"
+                )
             else:
                 response = (
                     "🗡️ 合刀计算结果：\n"
